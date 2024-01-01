@@ -45,7 +45,7 @@
       {
         "fullscreen": false,
         "resizable": false,
-        "title": "verve",
+        "title": "",
         "width": 750,
         "height": 85,
         "alwaysOnTop": true,
