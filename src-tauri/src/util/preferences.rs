@@ -37,12 +37,12 @@ struct Preferences {
 }
 
 pub fn create_preferences_if_missing() {
-    if let Some(proj_dirs) = ProjectDirs::from("", "parth", "verve") {
+    if let Some(proj_dirs) = ProjectDirs::from("com", "parth", "verve") {
         let preferences_path = proj_dirs.config_dir().join("preferences.json");
         let theme_path = proj_dirs.config_dir().join("theme.json");
         if !preferences_path.exists() {
             let preference = Preferences {
-                shortcut: String::from("Shift+K"),
+                shortcut: String::from("Alt+Shift+G"),
                 launch_on_login: true,
                 menu_bar_icon: true,
             };
@@ -53,6 +53,8 @@ pub fn create_preferences_if_missing() {
         if !theme_path.exists() {
             let theme = Theme::default();
             let theme_text = serde_json::to_string(&theme).unwrap();
+            // debug_assert_eq!(theme.primary_bg_color, "rgba(20, 20, 30, 0.6)");
+
             // fs::write(theme_path, &theme_text).unwrap();
         }
     }

@@ -8,7 +8,7 @@ use std::{
 };
 
 fn convert_and_store_icons(icns_path: &str, app_name: &str) {
-    if let Some(proj_dirs) = ProjectDirs::from("com", "parth jadhav", "verve") {
+    if let Some(proj_dirs) = ProjectDirs::from("com", "parthjadhav", "verve") {
         let icon_dir = proj_dirs.config_dir().join("appIcons");
         if fs::create_dir_all(&icon_dir).is_ok() {
             let icns_path = Path::new(icns_path);

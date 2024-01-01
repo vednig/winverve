@@ -47,6 +47,7 @@ const reloadTheme = async () => {
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
+      console.log('escape pressed');
       appWindow.hide();
     }
   });
@@ -68,6 +69,7 @@ const reloadTheme = async () => {
 
 export async function listenForHotkey(shortcut: string) {
   await register(shortcut, async () => {
+    console.log('shortcut pressed');
     if (document.hasFocus()) {
       await appWindow.hide();
     } else {

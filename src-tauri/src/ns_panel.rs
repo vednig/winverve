@@ -118,7 +118,7 @@ const SHOWN:bool = true;
  #[tauri::command]
 pub fn init_ns_panel(app_handle: AppHandle<Wry>, window: Window<Wry>, shortcut: &str) {
     INIT.call_once(|| {
-        set_state!(app_handle, panel, Some(create_ns_panel(&window)));
+        // set_state!(app_handle, panel, Some(create_ns_panel(&window)));
         register_shortcut(app_handle, shortcut);
     });
 }
@@ -142,13 +142,13 @@ fn register_shortcut(app_handle: AppHandle<Wry>, shortcut: &str) {
 
 #[tauri::command]
 pub fn show_app(app_handle: AppHandle<Wry>) {
-    app_handle.get_window("main").unwrap().show();
+    let _ = app_handle.get_window("main").unwrap().show();
     // panel!(app_handle).show();
 }
 
 #[tauri::command]
 pub fn hide_app(app_handle: AppHandle<Wry>) {
-    app_handle.get_window("main").unwrap().hide();
+    let _ = app_handle.get_window("main").unwrap().hide();
     // panel!(app_handle).order_out(None);
 }
 
