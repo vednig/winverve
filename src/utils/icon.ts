@@ -26,6 +26,7 @@ export const getIcon = async (app_name: string) => {
       'AirPort Utility',
     ].includes(app_name)
   ) {
+    // TodO: add more icons 
     iconPath = await resolveResource(`assets/appIcons/${app_name}.app.png`);
   } else {
     const appDataDirPath = await appDataDir();
