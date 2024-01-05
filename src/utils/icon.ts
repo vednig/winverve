@@ -19,11 +19,11 @@ export const getIcon = async (app_name: string) => {
   if (
     [
       'Migration Assistant',
-      'System Information',
-      'Calendar',
-      'System Settings',
-      'Photo Booth',
-      'AirPort Utility',
+      // 'System Information',
+      // 'Calendar ',
+      // 'System Settings',
+      // 'Photo Booth',
+      // 'AirPort Utility',
     ].includes(app_name)
   ) {
     // TodO: add more icons 
