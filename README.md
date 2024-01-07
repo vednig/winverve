@@ -7,13 +7,13 @@ Note: This is a fork of Verve for Windows
  - [X] Open Application
 
 
-## [Original Project Link](https://github.com/parth-jadhav/verve)
+## [Original Project Link](https://github.com/parthjadhav/verve)
 <details>
 ![Verve App Logo](./docs/Banner-Image.png)
 
 
 Verve is a lightweight and blazingly fast launcher for accessing and opening applications, files and documents. It serves as a replacement for popular tools such as Spotlight, Raycast, and Alfred, and is written in the Rust programming language using the Tauri Framework.
-
+ 
 🚧 Despite being in the early stages of development, Verve is already showing great promise as a reliable and efficient tool for organizing and accessing important information on your computer. We are actively seeking contributors to help us continue improving and expanding the capabilities of Verve. If you are interested in getting involved and making a positive impact on this exciting project, we welcome your participation.
 
 #### [📥 Download Verve](#📥-downloading)
