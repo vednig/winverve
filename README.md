@@ -1,13 +1,35 @@
 # Win-Verve
 Note: This is a fork of Verve for Windows
+PS: Most of the code is on an as is basis except the OS-specific parts.
 
 ## Features(that work for now)
  - [X] Basic Search
  - [X] Calculator Command
- - [X] Open Application
+ - [X] Open Applications and Files
 
+## Upcoming Features
+ - [] Extension Support
+ - [] Open Settings Panel
+ - [] Fix Hotkey Open and Close
+ - [] Translucent Background
+ - [] Clipboard Support
 
 ## [Original Project Link](https://github.com/parthjadhav/verve)
+
+
+## How to run
+
+To get Verve set up on your machine, you'll need to have Rust and Yarn installed. Then, follow these steps:
+
+1. Clone the project using `git clone https://github.com/ParthJadhav/verve.git`
+2. Change into the project directory: `cd verve`
+3. Install dependencies: `yarn`
+4. Run the development server: `yarn tauri dev`
+
+If you encounter any issues, try running `yarn tauri build` after installing dependencies.
+
+## If you can work on any of upcoming features, you are welcome to send a Pull Request or Oprn an Issue in this repo.
+
 <details>
 ![Verve App Logo](./docs/Banner-Image.png)
 
