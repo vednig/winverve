@@ -1,6 +1,16 @@
-# Verve
+# Win-Verve
+Note: This is a fork of Verve for Windows
 
+## Features(that work for now)
+ - [X] Basic Search
+ - [X] Calculator Command
+ - [X] Open Application
+
+
+## [Original Project Link](https://github.com/parth-jadhav/verve)
+<details>
 ![Verve App Logo](./docs/Banner-Image.png)
+
 
 Verve is a lightweight and blazingly fast launcher for accessing and opening applications, files and documents. It serves as a replacement for popular tools such as Spotlight, Raycast, and Alfred, and is written in the Rust programming language using the Tauri Framework.
 
@@ -99,3 +109,4 @@ Checkout [Issues section](https://github.com/ParthJadhav/verve/issues) to find o
 
 Verve is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. See the [LICENSE file](./LICENCE) for more information.
 
+</details>
