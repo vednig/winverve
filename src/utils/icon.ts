@@ -18,9 +18,9 @@ export const getIcon = async (app_name: string) => {
   let iconPath: string;
   if (
     [
-      'Migration Assistant',
+      // 'Migration Assistant',
       // 'System Information',
-      // 'Calendar ',
+      'Calendar ',
       // 'System Settings',
       // 'Photo Booth',
       // 'AirPort Utility',
