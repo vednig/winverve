@@ -44,11 +44,8 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": false,
         "title": "",
-        "width": 750,
-        "height": 85,
-        "alwaysOnTop": true,
+        
         "decorations": false,
         "transparent": true,
         "center": true,

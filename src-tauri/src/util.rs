@@ -31,6 +31,9 @@ pub async fn handle_input(input: String) -> (Vec<String>, f32, i32) {
             input.as_str(),
             vec![
                 "C:/Users/asus/Downloads/",
+                "C:/Users/asus/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/",
+                "C:/Program Files (x86)/",
+                "C:/Program Files/"
                 // "/System/Applications",
                 // "/System/Applications/Utilities",
             ],
@@ -42,7 +45,7 @@ pub async fn handle_input(input: String) -> (Vec<String>, f32, i32) {
     } else {
         result = search(
             input.trim_start_matches("/"),
-            vec!["C:/Users/asus/Downloads/"],
+            vec!["C:/Users/asus/"],
             None,
             Some(10000),
         );
@@ -75,8 +78,9 @@ pub fn get_icon(app_name: &str) -> String {
 
 #[tauri::command]
 pub fn open_command(path: &str) {
-    Command::new("open")
-        .arg(path.trim())
+    Command::new("cmd")
+        .args(&["/C", "start"])
+        .arg(path.trim())   
         .spawn()
         .expect("failed to execute process");
 }
