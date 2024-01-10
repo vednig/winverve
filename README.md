@@ -28,7 +28,7 @@ To get Verve set up on your machine, you'll need to have Rust and Yarn installed
 
 If you encounter any issues, try running `yarn tauri build` after installing dependencies.
 
-## If you can work on any of upcoming features, you are welcome to send a Pull Request or Oprn an Issue in this repo.
+## If you can work on any of upcoming features, you are welcome to send a Pull Request or Open an Issue in this repo.
 
 <details>
 ![Verve App Logo](./docs/Banner-Image.png)
