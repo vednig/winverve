@@ -8,11 +8,11 @@ PS: Most of the code is on an as is basis except the OS-specific parts.
  - [X] Open Applications and Files
 
 ## Upcoming Features
- - [] Extension Support
- - [] Open Settings Panel
- - [] Fix Hotkey Open and Close
- - [] Translucent Background
- - [] Clipboard Support
+ - [ ] Extension Support
+ - [ ] Open Settings Panel
+ - [ ] Fix Hotkey Open and Close
+ - [ ] Translucent Background
+ - [ ] Clipboard Support
 
 ## [Original Project Link](https://github.com/parthjadhav/verve)
 
